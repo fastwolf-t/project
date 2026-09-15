@@ -1,13 +1,15 @@
 [project]
-name = "bank-project"
+name = "bankval"
 version = "0.1.0"
-description = "project for validating client transactions"
+description = "project for validatig client's purchases"
 authors = [
     {name = "fastwolf"}
 ]
-license = "MIT"
-requires-python = ">=3.11"
-dependencies = []
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+]
+
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]

@@ -1,5 +1,3 @@
-# run all those from root directory
+clear
 
-poetry run flake8 .
-poetry run isort .
-poetry run mypy .
+poetry run python src/main.py

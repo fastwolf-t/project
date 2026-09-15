@@ -1,3 +1,5 @@
 # cache folders
 __pycache__
 .mypy_cache
+
+copy_files.sh

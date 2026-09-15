@@ -8,8 +8,7 @@ def get_mask_card_number(card_number: str) -> str:
         if i > 5 and i < 12:
             card_number_formatted += "*"
         else:
-            card_number_formatted += card_number[i]
-            
+            card_number_formatted += card_number[i]            
     return card_number_formatted
 
 def get_mask_account(card_number: str) -> str:
