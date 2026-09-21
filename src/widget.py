@@ -1,4 +1,5 @@
-import masks
+from . import masks  # относительный import для файлов в одной папке
+
 
 def mask_account_card(card_data: str) -> str:
     card_number = card_data.split(" ")[-1] # take only the card number
