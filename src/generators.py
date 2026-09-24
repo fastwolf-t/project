@@ -31,11 +31,9 @@ def card_number_generator(start: int, stop: int) -> Iterator[str]:
     возвращает итератор, который содержит в себе номер карты как строку.
     """
 
-    """
-    for card_number in range(start, stop + 1) запускает цикл от начала до конца
-    f"{card_number:016_}".replace("_", " ") преобразует числа в 16-значный десятичный формат
-    с нулями в начале, если номер карты короткий.
-    """
-
+    # цикл по всему диапазону номеров (включая stop)
     for card_number in range(start, stop + 1):
-        yield f"{card_number:016_}".replace("_", " ")
+        card_str = f"{card_number:016d}"
+        
+        # перебираем строку с шагом 4 и склеиваем куски через пробел
+        yield " ".join(card_str[i:i+4] for i in range(0, 16, 4))
