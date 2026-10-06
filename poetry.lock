@@ -119,6 +119,7 @@ jupyter = ["ipython (>=7.8.0)", "tokenize-rt (>=3.2.0)"]
 uvloop = ["uvloop (>=0.15.2) ; sys_platform != \"win32\"", "winloop (>=0.5.0) ; sys_platform == \"win32\""]
 
 [[package]]
+<<<<<<< HEAD
 name = "certifi"
 version = "2026.7.22"
 description = "Python package for providing Mozilla's CA Bundle."
@@ -313,6 +314,8 @@ files = [
 ]
 
 [[package]]
+=======
+>>>>>>> dev
 name = "click"
 version = "8.5.0"
 description = "Composable command line interface toolkit"
@@ -489,6 +492,7 @@ pycodestyle = ">=2.14.0,<2.15.0"
 pyflakes = ">=3.4.0,<3.5.0"
 
 [[package]]
+<<<<<<< HEAD
 name = "idna"
 version = "3.20"
 description = "Internationalized Domain Names in Applications (IDNA)"
@@ -504,6 +508,8 @@ files = [
 all = ["coverage (>=7.10.0)", "hypothesis (>=6.141.1)", "mypy (>=1.11.2)", "pytest (>=8.3.2)", "ruff (>=0.16.0)", "ty (>=0.0.37)"]
 
 [[package]]
+=======
+>>>>>>> dev
 name = "iniconfig"
 version = "2.3.0"
 description = "brain-dead simple config-ini parsing"
@@ -958,6 +964,7 @@ pytest = ">=7"
 testing = ["process-tests", "pytest-xdist", "virtualenv"]
 
 [[package]]
+<<<<<<< HEAD
 name = "python-dotenv"
 version = "1.2.4"
 description = "Read key-value pairs from a .env file and set them as environment variables"
@@ -973,6 +980,8 @@ files = [
 cli = ["click (>=5.0)"]
 
 [[package]]
+=======
+>>>>>>> dev
 name = "pytokens"
 version = "0.4.1"
 description = "A Fast, spec compliant Python 3.14+ tokenizer that runs on older Pythons."
@@ -1028,6 +1037,7 @@ files = [
 dev = ["black", "build", "mypy", "pytest", "pytest-cov", "setuptools", "tox", "twine", "wheel"]
 
 [[package]]
+<<<<<<< HEAD
 name = "requests"
 version = "2.34.2"
 description = "Python HTTP for Humans."
@@ -1050,6 +1060,8 @@ socks = ["PySocks (>=1.5.6,!=1.5.7)"]
 use-chardet-on-py3 = ["chardet (>=3.0.2,<8)"]
 
 [[package]]
+=======
+>>>>>>> dev
 name = "typing-extensions"
 version = "4.16.0"
 description = "Backported and Experimental Type Hints for Python 3.9+"
@@ -1061,6 +1073,7 @@ files = [
     {file = "typing_extensions-4.16.0.tar.gz", hash = "sha256:dc983d19a509c94dba722ee6abd33940f7c05a89e243c47e907eb4db6f1a43e5"},
 ]
 
+<<<<<<< HEAD
 [[package]]
 name = "urllib3"
 version = "2.8.0"
@@ -1083,3 +1096,9 @@ zstd = ["backports-zstd (>=1.0.0) ; python_version < \"3.14\""]
 lock-version = "2.1"
 python-versions = ">=3.14"
 content-hash = "e683a746b83f5f55bccd4d34e86328640b18aad995faa7b5088791e2ee5ec306"
+=======
+[metadata]
+lock-version = "2.1"
+python-versions = ">=3.14"
+content-hash = "f06e7dcb2f850d50cd5e00088953bf230f550efa9caa08ab3ca5beee90df940b"
+>>>>>>> dev
