@@ -18,10 +18,12 @@ def sample_operations() -> list[dict]:
     "state_arg, expected_ids",
     [
         ("EXECUTED", [1, 3]),  # ожидаемые id для "EXECUTED"
-        ("CANCELED", [2]),     # ожидаемые id для "CANCELED"
+        ("CANCELED", [2]),  # ожидаемые id для "CANCELED"
     ],
 )
-def test_filter_by_state(sample_operations: list[dict], state_arg: str, expected_ids: list[int]) -> None:
+def test_filter_by_state(
+    sample_operations: list[dict], state_arg: str, expected_ids: list[int]
+) -> None:
     result = filter_by_state(sample_operations, state_arg)
 
     result_ids = []
@@ -34,11 +36,13 @@ def test_filter_by_state(sample_operations: list[dict], state_arg: str, expected
 @pytest.mark.parametrize(
     "reverse_arg, expected_ids",
     [
-        (True, [1, 2, 3]),   # от новых к старым id
+        (True, [1, 2, 3]),  # от новых к старым id
         (False, [3, 2, 1]),  # от старых к новым id
     ],
 )
-def test_sort_by_date(sample_operations: list[dict], reverse_arg: bool, expected_ids: list[int]) -> None:
+def test_sort_by_date(
+    sample_operations: list[dict], reverse_arg: bool, expected_ids: list[int]
+) -> None:
     result = sort_by_date(sample_operations, reverse_arg)
 
     result_ids = []
