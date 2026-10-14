@@ -1,0 +1,1 @@
+cp -r ~/stud/python/project/. ~/Документы/GitHub/project
